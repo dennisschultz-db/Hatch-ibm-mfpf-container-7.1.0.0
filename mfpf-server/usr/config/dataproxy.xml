@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Licensed Materials - Property of IBM 5725-I43 (C) Copyright IBM Corp.
+  2015, 2015. All Rights Reserved. US Government Users Restricted Rights -
+  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with
+  IBM Corp. -->
+
+<server description="new server">
+    <!-- Enable features -->
+    <featureManager>
+        <!-- Data proxy features
+        
+        <feature>jaxrs-1.1</feature>
+        <feature>jndi-1.0</feature>
+        <feature>usr:OAuthTai-1.0</feature>        
+        --> 
+    </featureManager>
+    
+    <!-- OAuth TAI For Data Proxy -->
+    
+    <!--OAuth TAI For Data Proxy. 
+    <usr_OAuthTAI cacheSize="1000" id="myOAuthTAI">
+        <securityConstraint httpMethods="All" securedURLs="/datastore/*" scope="cloudant"/>
+    </usr_OAuthTAI>
+    -->   
+    
+    
+    <!--  
+    <webApplication contextRoot="datastore" id="imf-data-proxy" location="imf-data-proxy.war" name="imf-data-proxy">
+        <application-bnd>
+            <security-role name="TAIUserRole">
+                <special-subject type="ALL_AUTHENTICATED_USERS" />
+            </security-role>
+        </application-bnd>
+        <classloader delegation="parentLast">
+            <commonLibrary>
+                <fileset dir="${wlp.install.dir}/lib" includes="com.ibm.ws.crypto.passwordutil*.jar"/>
+            </commonLibrary>
+        </classloader>
+    </webApplication>
+     -->
+     
+     
+     <!-- Declare the JNDI properties for the MobileFirst Data Proxy. 
+          Note: These jndi properties are not required if a bluemix app is bound to the container when startserver.sh or startservegroup.sh is executed.
+                Also, uncomment the entry publicKeyServerUrl in server.env and fill in the correct URL.
+     <jndiEntry jndiName="datastore/CloudantProxyDbAccount" value='"hostname"'/>
+     <jndiEntry jndiName="datastore/CloudantProtocol" value='"http"'/>
+     <jndiEntry jndiName="datastore/CloudantPort" value='"80"'/>
+     <jndiEntry jndiName="datastore/CloudantProxyDbAccountUser" value='"cloudantuser"'/>
+     <jndiEntry jndiName="datastore/CloudantProxyDbAccountPassword" value='"cloudantpassword"'/>
+     -->
+</server>

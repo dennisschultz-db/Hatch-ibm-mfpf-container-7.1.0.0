@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><server description="new server">
+<jndiEntry jndiName="HatchReadyApp/mfp.db.cloudant.username" value="ffc7b5cd-83f1-435c-a559-d9c3cada03ed-bluemix"/>
+<jndiEntry jndiName="HatchReadyApp/mfp.db.cloudant.password" value="2b818bd49570b96ac361d27085986cf0d09e67e267b593e4df08f0979abe0734"/>
+<jndiEntry jndiName="HatchReadyApp/mfp.db.cloudant.url" value="https://ffc7b5cd-83f1-435c-a559-d9c3cada03ed-bluemix:2b818bd49570b96ac361d27085986cf0d09e67e267b593e4df08f0979abe0734@ffc7b5cd-83f1-435c-a559-d9c3cada03ed-bluemix.cloudant.com"/>
+<application id="HatchReadyApp" location="HatchReadyApp.war" name="HatchReadyApp" type="war">
+<classloader delegation="parentLast">
+<privateLibrary id="worklightlib_HatchReadyApp">
+<fileset dir="${shared.resource.dir}/lib" includes="worklight-jee-library.jar"/>
+<fileset dir="${wlp.install.dir}/lib" includes="com.ibm.ws.crypto.passwordutil*.jar"/>
+</privateLibrary>
+</classloader>
+</application>
+</server>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><server description="new server">
+<jndiEntry jndiName="${env.MFPF_ADMIN_ROOT}/mfp.db.cloudant.username" value="ffc7b5cd-83f1-435c-a559-d9c3cada03ed-bluemix"/>
+<jndiEntry jndiName="${env.MFPF_ADMIN_ROOT}/mfp.db.cloudant.password" value="2b818bd49570b96ac361d27085986cf0d09e67e267b593e4df08f0979abe0734"/>
+<jndiEntry jndiName="${env.MFPF_ADMIN_ROOT}/mfp.db.cloudant.url" value="https://ffc7b5cd-83f1-435c-a559-d9c3cada03ed-bluemix:2b818bd49570b96ac361d27085986cf0d09e67e267b593e4df08f0979abe0734@ffc7b5cd-83f1-435c-a559-d9c3cada03ed-bluemix.cloudant.com"/>
+</server>
